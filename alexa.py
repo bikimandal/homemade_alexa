@@ -114,9 +114,6 @@ def run_alexa():
         exit = True
     elif "thank you" in command:
         talk("Mention not. It is my plesure.")
-    elif "who is my girlfriend" in command:
-        talk("as far as i know u are in love with shubhaankeeta")
-
     else:
         talk("please say it again")
         take_command()
