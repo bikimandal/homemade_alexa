@@ -78,7 +78,7 @@ def run_alexa():
     if "hi" in command or "hai" in command:
         talk("Hii" + user_name + "what can i do for you")
                                                                          #weather
-    if "weather" in command :
+    elif "weather" in command :
         print(weather(user_city))
         talk(weather(user_city))
                                                                          #open
@@ -108,7 +108,9 @@ def run_alexa():
         talk("i am in a relationship with wifi")
     # joke
     elif "joke" in command:
-        talk(pyjokes.get_joke())
+        joke = pyjokes.get_joke()
+        print(joke)
+        talk(joke)
     # else
     elif "turn off" in command:
         exit = True
